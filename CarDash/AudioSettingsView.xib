@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MC360.ttf">
+            <string>MC360</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AudioSettingsView" customModule="CarDash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="883" height="604"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basses" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="Tde-gR-lCb">
+                    <rect key="frame" x="30" y="31" width="140" height="51"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="42"/>
+                    <color key="textColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aigus" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="fgE-S5-5L5">
+                    <rect key="frame" x="30" y="88" width="140" height="51"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="42"/>
+                    <color key="textColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="jM6-Dq-cWt">
+                    <rect key="frame" x="30" y="290" width="140" height="51"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="42"/>
+                    <color key="textColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrière" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-nu-vx3">
+                    <rect key="frame" x="202" y="258" width="62" height="27"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="22"/>
+                    <color key="textColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avant" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="B8Y-4w-Q49">
+                    <rect key="frame" x="700" y="258" width="52" height="27"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="22"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gauche" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="beH-Y6-ZeZ">
+                    <rect key="frame" x="202" y="364" width="68" height="27"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="22"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume auto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="F8c-mf-fsS">
+                    <rect key="frame" x="222" y="411" width="197" height="47"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="38"/>
+                    <color key="textColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equalizer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="F3I-Dr-d0p">
+                    <rect key="frame" x="588" y="411" width="144" height="47"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="38"/>
+                    <color key="textColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rin-C2-e8F" customClass="SettingProgressView" customModule="CarDash" customModuleProvider="target">
+                    <rect key="frame" x="202" y="45" width="550" height="35"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="550" id="3B9-CG-XH2"/>
+                        <constraint firstAttribute="height" constant="35" id="Po8-vE-luf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrY-x1-uqv" customClass="SettingProgressView" customModule="CarDash" customModuleProvider="target">
+                    <rect key="frame" x="202" y="102" width="550" height="35"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-cI-5Lj" customClass="SettingProgressView" customModule="CarDash" customModuleProvider="target">
+                    <rect key="frame" x="202" y="288" width="550" height="35"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33v-7B-o4t" customClass="SettingProgressView" customModule="CarDash" customModuleProvider="target">
+                    <rect key="frame" x="202" y="326" width="550" height="35"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oui" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="cG3-CR-AJg" customClass="SettingLabel" customModule="CarDash" customModuleProvider="target">
+                    <rect key="frame" x="290" y="456" width="62" height="56"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="46"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oui" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="COB-cq-ZTE" customClass="SettingLabel" customModule="CarDash" customModuleProvider="target">
+                    <rect key="frame" x="446" y="202" width="62" height="56"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="46"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-uT-kFg">
+                    <rect key="frame" x="767" y="41" width="33" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="diL-QZ-MM8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="36"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="n5Z-TZ-Vgw">
+                    <rect key="frame" x="767" y="98" width="33" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="weX-ki-GIL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="36"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="Xpp-oc-OIM">
+                    <rect key="frame" x="767" y="284" width="33" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="fh8-pL-5KD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="36"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="Yud-43-2s1">
+                    <rect key="frame" x="767" y="322" width="33" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="dZy-bt-VOo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="36"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pop-Rock" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="vTx-Tr-0dw" customClass="SettingLabel" customModule="CarDash" customModuleProvider="target">
+                    <rect key="frame" x="573" y="456" width="175" height="56"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="46"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpp-K3-GYt">
+                    <rect key="frame" x="476" y="284" width="4" height="81"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="FhN-oK-4iJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9C-GZ-rpR">
+                    <rect key="frame" x="476" y="98" width="4" height="43"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="wyO-Kb-7Ky"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5Q-Ju-xVv">
+                    <rect key="frame" x="476" y="41" width="4" height="43"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="7ri-6M-wgP"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Droite" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="c2H-MM-2D0">
+                    <rect key="frame" x="696" y="364" width="56" height="27"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="22"/>
+                    <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loudness" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="kQa-ZK-6bK">
+                    <rect key="frame" x="403" y="157" width="149" height="47"/>
+                    <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="38"/>
+                    <color key="textColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ewC-cI-5Lj" firstAttribute="leading" secondItem="PuK-nu-vx3" secondAttribute="leading" id="16t-pT-Row"/>
+                <constraint firstItem="kQa-ZK-6bK" firstAttribute="centerX" secondItem="OrY-x1-uqv" secondAttribute="centerX" id="1C7-mn-ves"/>
+                <constraint firstItem="X3q-uT-kFg" firstAttribute="leading" secondItem="Rin-C2-e8F" secondAttribute="trailing" constant="15" id="2Vx-T3-Rdd"/>
+                <constraint firstItem="Lpp-K3-GYt" firstAttribute="centerX" secondItem="ewC-cI-5Lj" secondAttribute="centerX" constant="1" id="2fO-Di-pF1"/>
+                <constraint firstItem="OrY-x1-uqv" firstAttribute="leading" secondItem="Rin-C2-e8F" secondAttribute="leading" id="2xh-lW-SzW"/>
+                <constraint firstItem="F8c-mf-fsS" firstAttribute="baseline" secondItem="F3I-Dr-d0p" secondAttribute="baseline" id="3FN-dW-200"/>
+                <constraint firstItem="33v-7B-o4t" firstAttribute="top" secondItem="ewC-cI-5Lj" secondAttribute="bottom" constant="3" id="3HZ-Bv-y8U"/>
+                <constraint firstItem="Tde-gR-lCb" firstAttribute="width" secondItem="fgE-S5-5L5" secondAttribute="width" id="3Kn-06-Pbk"/>
+                <constraint firstItem="Tde-gR-lCb" firstAttribute="trailing" secondItem="fgE-S5-5L5" secondAttribute="trailing" id="3zB-xc-8L6"/>
+                <constraint firstItem="cG3-CR-AJg" firstAttribute="centerX" secondItem="F8c-mf-fsS" secondAttribute="centerX" id="5Sc-sr-AUK"/>
+                <constraint firstItem="L9C-GZ-rpR" firstAttribute="bottom" secondItem="OrY-x1-uqv" secondAttribute="bottom" constant="4" id="5hC-sN-pIz"/>
+                <constraint firstItem="ewC-cI-5Lj" firstAttribute="top" secondItem="B8Y-4w-Q49" secondAttribute="bottom" constant="3" id="7AD-XT-B2J"/>
+                <constraint firstItem="OrY-x1-uqv" firstAttribute="height" secondItem="Rin-C2-e8F" secondAttribute="height" id="9jb-Kb-Ceh"/>
+                <constraint firstItem="vTx-Tr-0dw" firstAttribute="centerX" secondItem="F3I-Dr-d0p" secondAttribute="centerX" id="A11-yq-Nlo"/>
+                <constraint firstItem="Tde-gR-lCb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="App-qX-ZfC"/>
+                <constraint firstItem="F8c-mf-fsS" firstAttribute="top" secondItem="beH-Y6-ZeZ" secondAttribute="bottom" constant="20" id="BOe-zO-Xj6"/>
+                <constraint firstItem="L9C-GZ-rpR" firstAttribute="centerX" secondItem="OrY-x1-uqv" secondAttribute="centerX" constant="1" id="Bld-SB-psY"/>
+                <constraint firstItem="n5Z-TZ-Vgw" firstAttribute="centerY" secondItem="OrY-x1-uqv" secondAttribute="centerY" id="CwD-w4-NOZ"/>
+                <constraint firstItem="ewC-cI-5Lj" firstAttribute="top" secondItem="COB-cq-ZTE" secondAttribute="bottom" constant="30" id="Cwg-Rg-sCa"/>
+                <constraint firstItem="vTx-Tr-0dw" firstAttribute="top" secondItem="F3I-Dr-d0p" secondAttribute="bottom" constant="-2" id="Eyd-sJ-FHt"/>
+                <constraint firstItem="C5Q-Ju-xVv" firstAttribute="top" secondItem="Rin-C2-e8F" secondAttribute="top" constant="-4" id="HEO-nF-1l7"/>
+                <constraint firstItem="COB-cq-ZTE" firstAttribute="centerX" secondItem="kQa-ZK-6bK" secondAttribute="centerX" id="HRl-8F-p9G"/>
+                <constraint firstItem="beH-Y6-ZeZ" firstAttribute="leading" secondItem="33v-7B-o4t" secondAttribute="leading" id="IQS-kb-Urx"/>
+                <constraint firstItem="33v-7B-o4t" firstAttribute="leading" secondItem="ewC-cI-5Lj" secondAttribute="leading" id="Jnk-n4-twt"/>
+                <constraint firstItem="Yud-43-2s1" firstAttribute="centerY" secondItem="33v-7B-o4t" secondAttribute="centerY" id="JrO-7z-vGC"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cG3-CR-AJg" secondAttribute="bottom" constant="30" id="KP6-VF-EFH"/>
+                <constraint firstItem="cG3-CR-AJg" firstAttribute="top" secondItem="F8c-mf-fsS" secondAttribute="bottom" constant="-2" id="KSC-Fc-Lec"/>
+                <constraint firstItem="X3q-uT-kFg" firstAttribute="centerY" secondItem="Rin-C2-e8F" secondAttribute="centerY" id="LMI-qb-vF2"/>
+                <constraint firstItem="B8Y-4w-Q49" firstAttribute="trailing" secondItem="ewC-cI-5Lj" secondAttribute="trailing" id="LX4-OT-FZe"/>
+                <constraint firstItem="c2H-MM-2D0" firstAttribute="top" secondItem="33v-7B-o4t" secondAttribute="bottom" constant="3" id="OQI-qL-Lqi"/>
+                <constraint firstItem="L9C-GZ-rpR" firstAttribute="top" secondItem="OrY-x1-uqv" secondAttribute="top" constant="-4" id="Q9o-cB-i4U"/>
+                <constraint firstItem="fgE-S5-5L5" firstAttribute="top" secondItem="Tde-gR-lCb" secondAttribute="bottom" constant="6" id="QIv-T2-QbX"/>
+                <constraint firstItem="c2H-MM-2D0" firstAttribute="trailing" secondItem="33v-7B-o4t" secondAttribute="trailing" id="RvL-D9-fpC"/>
+                <constraint firstItem="fgE-S5-5L5" firstAttribute="width" secondItem="jM6-Dq-cWt" secondAttribute="width" id="TAX-2v-JK4"/>
+                <constraint firstItem="33v-7B-o4t" firstAttribute="width" secondItem="ewC-cI-5Lj" secondAttribute="width" id="TnW-rT-4pc"/>
+                <constraint firstItem="F8c-mf-fsS" firstAttribute="leading" secondItem="33v-7B-o4t" secondAttribute="leading" constant="20" id="UQj-sB-A31"/>
+                <constraint firstItem="Lpp-K3-GYt" firstAttribute="bottom" secondItem="33v-7B-o4t" secondAttribute="bottom" constant="4" id="VoX-z3-vR0"/>
+                <constraint firstItem="33v-7B-o4t" firstAttribute="height" secondItem="ewC-cI-5Lj" secondAttribute="height" id="WkQ-LJ-X2b"/>
+                <constraint firstItem="ewC-cI-5Lj" firstAttribute="width" secondItem="OrY-x1-uqv" secondAttribute="width" id="X5g-ei-SGm"/>
+                <constraint firstItem="Xpp-oc-OIM" firstAttribute="centerY" secondItem="ewC-cI-5Lj" secondAttribute="centerY" id="Yom-dD-T0I"/>
+                <constraint firstItem="Xpp-oc-OIM" firstAttribute="leading" secondItem="ewC-cI-5Lj" secondAttribute="trailing" constant="15" id="a2i-1F-Us6"/>
+                <constraint firstItem="C5Q-Ju-xVv" firstAttribute="centerX" secondItem="Rin-C2-e8F" secondAttribute="centerX" constant="1" id="asX-jg-heP"/>
+                <constraint firstItem="Rin-C2-e8F" firstAttribute="leading" secondItem="Tde-gR-lCb" secondAttribute="trailing" constant="32" id="bU2-tg-FeD"/>
+                <constraint firstItem="OrY-x1-uqv" firstAttribute="baseline" secondItem="fgE-S5-5L5" secondAttribute="baseline" constant="6" id="ddF-K8-Vux"/>
+                <constraint firstItem="fgE-S5-5L5" firstAttribute="trailing" secondItem="jM6-Dq-cWt" secondAttribute="trailing" id="evy-jT-QBd"/>
+                <constraint firstItem="ewC-cI-5Lj" firstAttribute="centerY" secondItem="jM6-Dq-cWt" secondAttribute="centerY" constant="-10" id="gqE-ea-eZj"/>
+                <constraint firstItem="Yud-43-2s1" firstAttribute="leading" secondItem="33v-7B-o4t" secondAttribute="trailing" constant="15" id="ij2-Ol-Hpi"/>
+                <constraint firstItem="beH-Y6-ZeZ" firstAttribute="top" secondItem="33v-7B-o4t" secondAttribute="bottom" constant="3" id="isP-fu-Cvx"/>
+                <constraint firstItem="ewC-cI-5Lj" firstAttribute="height" secondItem="OrY-x1-uqv" secondAttribute="height" id="jbj-2e-VAN"/>
+                <constraint firstItem="Rin-C2-e8F" firstAttribute="baseline" secondItem="Tde-gR-lCb" secondAttribute="baseline" constant="6" id="kLF-Sl-QbJ"/>
+                <constraint firstItem="ewC-cI-5Lj" firstAttribute="top" secondItem="PuK-nu-vx3" secondAttribute="bottom" constant="3" id="msS-cG-bgr"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X3q-uT-kFg" secondAttribute="trailing" constant="20" id="oEA-R8-col"/>
+                <constraint firstItem="C5Q-Ju-xVv" firstAttribute="bottom" secondItem="Rin-C2-e8F" secondAttribute="bottom" constant="4" id="oRh-q9-aih"/>
+                <constraint firstItem="COB-cq-ZTE" firstAttribute="top" secondItem="kQa-ZK-6bK" secondAttribute="bottom" constant="-2" id="poW-zP-e5i"/>
+                <constraint firstItem="Lpp-K3-GYt" firstAttribute="top" secondItem="ewC-cI-5Lj" secondAttribute="top" constant="-4" id="qTN-3i-x0r"/>
+                <constraint firstItem="F3I-Dr-d0p" firstAttribute="trailing" secondItem="33v-7B-o4t" secondAttribute="trailing" constant="-20" id="ud3-Te-XnC"/>
+                <constraint firstItem="kQa-ZK-6bK" firstAttribute="top" secondItem="OrY-x1-uqv" secondAttribute="bottom" constant="20" id="vW4-lW-rFO"/>
+                <constraint firstItem="Tde-gR-lCb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="vWz-3s-kfW"/>
+                <constraint firstItem="n5Z-TZ-Vgw" firstAttribute="leading" secondItem="OrY-x1-uqv" secondAttribute="trailing" constant="15" id="w8s-WE-RhR"/>
+                <constraint firstItem="ewC-cI-5Lj" firstAttribute="leading" secondItem="OrY-x1-uqv" secondAttribute="leading" id="wC4-fS-7hO"/>
+                <constraint firstItem="OrY-x1-uqv" firstAttribute="width" secondItem="Rin-C2-e8F" secondAttribute="width" id="xad-kW-apo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="automaticVolumeValue" destination="cG3-CR-AJg" id="qdm-DD-6GY"/>
+                <outlet property="bassBar" destination="Rin-C2-e8F" id="BDX-GY-sCe"/>
+                <outlet property="bassValue" destination="X3q-uT-kFg" id="6xg-LL-yY4"/>
+                <outlet property="equalizerValue" destination="vTx-Tr-0dw" id="o6Y-h8-eSR"/>
+                <outlet property="frontRearBalanceBar" destination="ewC-cI-5Lj" id="FJo-cU-cUP"/>
+                <outlet property="frontRearBalanceValue" destination="Xpp-oc-OIM" id="K95-Nd-s3r"/>
+                <outlet property="leftRightBalanceBar" destination="33v-7B-o4t" id="CcH-Zd-HxF"/>
+                <outlet property="leftRightBalanceValue" destination="Yud-43-2s1" id="iA6-MS-IiV"/>
+                <outlet property="loudnessValue" destination="COB-cq-ZTE" id="QxG-ky-m8k"/>
+                <outlet property="trebleBar" destination="OrY-x1-uqv" id="nc9-lS-rA0"/>
+                <outlet property="trebleValue" destination="n5Z-TZ-Vgw" id="IZE-t9-KhY"/>
+            </connections>
+            <point key="canvasLocation" x="825.5" y="649"/>
+        </view>
+    </objects>
+</document>

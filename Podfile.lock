@@ -1,0 +1,14 @@
+PODS:
+  - MarqueeLabel (2.7.5):
+    - MarqueeLabel/ObjC (= 2.7.5)
+  - MarqueeLabel/ObjC (2.7.5)
+
+DEPENDENCIES:
+  - MarqueeLabel
+
+SPEC CHECKSUMS:
+  MarqueeLabel: bd476f1a91e4414a6aec4ea4096a9979e8c8c2ad
+
+PODFILE CHECKSUM: e6c498418e027b3dd5b243f15d4a8a7d6de77078
+
+COCOAPODS: 1.0.1

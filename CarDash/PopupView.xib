@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MC360.ttf">
+            <string>MC360</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopupView" customModule="CarDash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="703" height="336"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-FH-aNv">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="336"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardoors_base" translatesAutoresizingMaskIntoConstraints="NO" id="0bD-gS-R6g">
+                            <rect key="frame" x="36" y="73" width="148" height="190"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="5qm-To-emR"/>
+                        <constraint firstItem="0bD-gS-R6g" firstAttribute="centerY" secondItem="hfg-FH-aNv" secondAttribute="centerY" id="Nzg-bO-cdV"/>
+                        <constraint firstItem="0bD-gS-R6g" firstAttribute="centerX" secondItem="hfg-FH-aNv" secondAttribute="centerX" constant="10" id="zMY-II-EyU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkl-m9-8AS">
+                    <rect key="frame" x="200" y="0.0" width="503" height="336"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="640" translatesAutoresizingMaskIntoConstraints="NO" id="L9Z-xI-0gj">
+                            <rect key="frame" x="138" y="131" width="228" height="74"/>
+                            <fontDescription key="fontDescription" name="MC360" family="MC360" pointSize="61"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L9Z-xI-0gj" secondAttribute="bottom" constant="20" id="1DA-4K-Bgn"/>
+                        <constraint firstItem="L9Z-xI-0gj" firstAttribute="centerX" secondItem="Zkl-m9-8AS" secondAttribute="centerX" id="9YG-fh-Yg8"/>
+                        <constraint firstItem="L9Z-xI-0gj" firstAttribute="centerY" secondItem="Zkl-m9-8AS" secondAttribute="centerY" id="Oam-Ns-sU7"/>
+                        <constraint firstItem="L9Z-xI-0gj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Zkl-m9-8AS" secondAttribute="top" constant="20" id="hMH-oD-J7Q"/>
+                        <constraint firstItem="L9Z-xI-0gj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zkl-m9-8AS" secondAttribute="leading" constant="35" id="nPN-AH-JJg"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="L9Z-xI-0gj" secondAttribute="trailing" constant="35" id="uya-Tr-xG0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zkl-m9-8AS" secondAttribute="trailing" id="1NE-7e-GXg"/>
+                <constraint firstAttribute="bottom" secondItem="hfg-FH-aNv" secondAttribute="bottom" id="D6r-IE-zKw"/>
+                <constraint firstItem="Zkl-m9-8AS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hze-dm-HYk"/>
+                <constraint firstItem="Zkl-m9-8AS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OhI-sk-rEh"/>
+                <constraint firstAttribute="bottom" secondItem="Zkl-m9-8AS" secondAttribute="bottom" id="Zac-c5-FZY"/>
+                <constraint firstItem="Zkl-m9-8AS" firstAttribute="leading" secondItem="hfg-FH-aNv" secondAttribute="trailing" id="t4a-li-Zem"/>
+                <constraint firstItem="hfg-FH-aNv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xla-Sf-rTV"/>
+                <constraint firstItem="hfg-FH-aNv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zIW-uh-WqU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="OhI-sk-rEh"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageConstraint" destination="t4a-li-Zem" id="JSj-lM-V2v"/>
+                <outlet property="imageView" destination="0bD-gS-R6g" id="uTF-K7-f6T"/>
+                <outlet property="textLabel" destination="L9Z-xI-0gj" id="h1S-5P-ZCc"/>
+                <outlet property="textOnlyConstraint" destination="OhI-sk-rEh" id="Ohj-t9-Yq2"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="cardoors_base" width="148" height="190"/>
+    </resources>
+</document>

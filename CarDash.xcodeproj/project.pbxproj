@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		953E77BDD8254915C6542752 /* Pods_CarDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13512271707097C8808417D6 /* Pods_CarDash.framework */; };
+		FA0A155E1B6E6CC200B67891 /* BLESerialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A155B1B6E6CC200B67891 /* BLESerialManager.m */; };
+		FA0A155F1B6E6CC200B67891 /* BLESerialDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A155D1B6E6CC200B67891 /* BLESerialDevice.m */; };
+		FA1ABD3F1B0886B400F1D31C /* MMPDeepSleepPreventer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1ABD3D1B0886B400F1D31C /* MMPDeepSleepPreventer.m */; };
+		FA1ABD401B0886B400F1D31C /* MMPSilence.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA1ABD3E1B0886B400F1D31C /* MMPSilence.wav */; };
+		FA45A06D1BF1253B007D6F08 /* TripInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA45A06C1BF1253B007D6F08 /* TripInfoView.xib */; };
+		FA59CC321D0D6DBB00867547 /* PopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA59CC311D0D6DBB00867547 /* PopupView.xib */; };
+		FA59CC5A1D0DC0EB00867547 /* CarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59CC591D0DC0EB00867547 /* CarInfo.swift */; };
+		FA59CC5C1D0DC9DA00867547 /* CarInfo+SerialParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59CC5B1D0DC9DA00867547 /* CarInfo+SerialParserDelegate.swift */; };
+		FA59CC5E1D0DD20500867547 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59CC5D1D0DD20500867547 /* DebugViewController.swift */; };
+		FA59CC601D0DD47300867547 /* CarObservingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59CC5F1D0DD47300867547 /* CarObservingViewController.swift */; };
+		FA59CC671D0DD96300867547 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59CC661D0DD96300867547 /* DashboardViewController.swift */; };
+		FA59CC691D0DE39900867547 /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59CC681D0DE39900867547 /* RadioViewController.swift */; };
+		FA59CC6B1D0DE71C00867547 /* TripInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59CC6A1D0DE71C00867547 /* TripInfoViewController.swift */; };
+		FA59CC6D1D0DEB4E00867547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59CC6C1D0DEB4E00867547 /* AppDelegate.swift */; };
+		FA59CC6F1D0E159C00867547 /* CarDoors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59CC6E1D0E159C00867547 /* CarDoors.swift */; };
+		FA627A311AFEC7E800D38218 /* MC360.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA4FCBD91AFEC51B0036A037 /* MC360.ttf */; };
+		FABD3C7F1E2A7459001E902A /* TripInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD3C7E1E2A7459001E902A /* TripInfoView.swift */; };
+		FABD3C821E2A77DE001E902A /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD3C811E2A77DE001E902A /* GraphView.swift */; };
+		FABD3CAA1E2A9595001E902A /* SerialParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD3CA91E2A9595001E902A /* SerialParserTests.swift */; };
+		FABD3CAC1E2A99C4001E902A /* BluetoothSerialParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD3CAB1E2A99C4001E902A /* BluetoothSerialParser.swift */; };
+		FABD3CAE1E2AC77B001E902A /* SerialParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD3CAD1E2AC77B001E902A /* SerialParser.swift */; };
+		FABD3CB01E2AD4B7001E902A /* cansample.hex in Resources */ = {isa = PBXBuildFile; fileRef = FABD3CAF1E2AD2CF001E902A /* cansample.hex */; };
+		FABEAB111D290C3B006BCDB8 /* SettingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEAB0F1D290C3B006BCDB8 /* SettingProgressView.swift */; };
+		FABEAB121D290C3B006BCDB8 /* SettingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEAB101D290C3B006BCDB8 /* SettingLabel.swift */; };
+		FABEAB141D290D73006BCDB8 /* AudioSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABEAB131D290D73006BCDB8 /* AudioSettingsView.xib */; };
+		FABEAB161D290D81006BCDB8 /* AudioSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEAB151D290D81006BCDB8 /* AudioSettingsView.swift */; };
+		FABEAB181D290DDF006BCDB8 /* BlurredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEAB171D290DDF006BCDB8 /* BlurredView.swift */; };
+		FABEAB1A1D290F09006BCDB8 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEAB191D290F09006BCDB8 /* PopupView.swift */; };
+		FABF1B581AFE7C64008D7708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABF1B561AFE7C64008D7708 /* Main.storyboard */; };
+		FABF1B5A1AFE7C64008D7708 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABF1B591AFE7C64008D7708 /* Images.xcassets */; };
+		FABF1B5D1AFE7C64008D7708 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABF1B5B1AFE7C64008D7708 /* LaunchScreen.xib */; };
+		FAF2640C1D15AE6B002C2DD3 /* AudioSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2640B1D15AE6B002C2DD3 /* AudioSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FABD3CA01E2A9514001E902A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FABF1B411AFE7C64008D7708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FABF1B481AFE7C64008D7708;
+			remoteInfo = CarDash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13512271707097C8808417D6 /* Pods_CarDash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarDash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		695AD8DAA0E1E51FA88A4246 /* Pods-CarDash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarDash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarDash/Pods-CarDash.debug.xcconfig"; sourceTree = "<group>"; };
+		E5AF33B5BE997B6B85484561 /* Pods-CarDash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarDash.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarDash/Pods-CarDash.release.xcconfig"; sourceTree = "<group>"; };
+		FA0A155A1B6E6CC200B67891 /* BLESerialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLESerialManager.h; sourceTree = "<group>"; };
+		FA0A155B1B6E6CC200B67891 /* BLESerialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLESerialManager.m; sourceTree = "<group>"; };
+		FA0A155C1B6E6CC200B67891 /* BLESerialDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLESerialDevice.h; sourceTree = "<group>"; };
+		FA0A155D1B6E6CC200B67891 /* BLESerialDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLESerialDevice.m; sourceTree = "<group>"; };
+		FA1ABD3C1B0886B400F1D31C /* MMPDeepSleepPreventer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMPDeepSleepPreventer.h; path = CarDash/MMPDeepSleepPreventer/MMPDeepSleepPreventer.h; sourceTree = SOURCE_ROOT; };
+		FA1ABD3D1B0886B400F1D31C /* MMPDeepSleepPreventer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMPDeepSleepPreventer.m; path = CarDash/MMPDeepSleepPreventer/MMPDeepSleepPreventer.m; sourceTree = SOURCE_ROOT; };
+		FA1ABD3E1B0886B400F1D31C /* MMPSilence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = MMPSilence.wav; path = CarDash/MMPDeepSleepPreventer/MMPSilence.wav; sourceTree = SOURCE_ROOT; };
+		FA45A06C1BF1253B007D6F08 /* TripInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripInfoView.xib; sourceTree = "<group>"; };
+		FA4FCBD91AFEC51B0036A037 /* MC360.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MC360.ttf; sourceTree = "<group>"; };
+		FA59CC311D0D6DBB00867547 /* PopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupView.xib; sourceTree = "<group>"; };
+		FA59CC381D0DC03E00867547 /* CarDash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarDash-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA59CC591D0DC0EB00867547 /* CarInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarInfo.swift; sourceTree = "<group>"; };
+		FA59CC5B1D0DC9DA00867547 /* CarInfo+SerialParserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CarInfo+SerialParserDelegate.swift"; sourceTree = "<group>"; };
+		FA59CC5D1D0DD20500867547 /* DebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		FA59CC5F1D0DD47300867547 /* CarObservingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarObservingViewController.swift; sourceTree = "<group>"; };
+		FA59CC661D0DD96300867547 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		FA59CC681D0DE39900867547 /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
+		FA59CC6A1D0DE71C00867547 /* TripInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripInfoViewController.swift; sourceTree = "<group>"; };
+		FA59CC6C1D0DEB4E00867547 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA59CC6E1D0E159C00867547 /* CarDoors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDoors.swift; sourceTree = "<group>"; };
+		FABD3C7E1E2A7459001E902A /* TripInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripInfoView.swift; sourceTree = "<group>"; };
+		FABD3C811E2A77DE001E902A /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		FABD3C9B1E2A9514001E902A /* CarDashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarDashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABD3C9F1E2A9514001E902A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABD3CA51E2A953A001E902A /* CarDashTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarDashTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FABD3CA91E2A9595001E902A /* SerialParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialParserTests.swift; sourceTree = "<group>"; };
+		FABD3CAB1E2A99C4001E902A /* BluetoothSerialParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSerialParser.swift; sourceTree = "<group>"; };
+		FABD3CAD1E2AC77B001E902A /* SerialParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialParser.swift; sourceTree = "<group>"; };
+		FABD3CAF1E2AD2CF001E902A /* cansample.hex */ = {isa = PBXFileReference; lastKnownFileType = file; path = cansample.hex; sourceTree = "<group>"; };
+		FABEAB0F1D290C3B006BCDB8 /* SettingProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingProgressView.swift; sourceTree = "<group>"; };
+		FABEAB101D290C3B006BCDB8 /* SettingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingLabel.swift; sourceTree = "<group>"; };
+		FABEAB131D290D73006BCDB8 /* AudioSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioSettingsView.xib; sourceTree = "<group>"; };
+		FABEAB151D290D81006BCDB8 /* AudioSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSettingsView.swift; sourceTree = "<group>"; };
+		FABEAB171D290DDF006BCDB8 /* BlurredView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredView.swift; sourceTree = "<group>"; };
+		FABEAB191D290F09006BCDB8 /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		FABF1B491AFE7C64008D7708 /* CarDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABF1B4D1AFE7C64008D7708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABF1B571AFE7C64008D7708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FABF1B591AFE7C64008D7708 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FABF1B5C1AFE7C64008D7708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FAF2640B1D15AE6B002C2DD3 /* AudioSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSettings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FABD3C981E2A9514001E902A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABF1B461AFE7C64008D7708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953E77BDD8254915C6542752 /* Pods_CarDash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73D4271A8D16F4E822FA06A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				695AD8DAA0E1E51FA88A4246 /* Pods-CarDash.debug.xcconfig */,
+				E5AF33B5BE997B6B85484561 /* Pods-CarDash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D289F3F72C44EBF4B032E5FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13512271707097C8808417D6 /* Pods_CarDash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA1ABD321B0885D600F1D31C /* MMPDeepSleepPreventer */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABD3C1B0886B400F1D31C /* MMPDeepSleepPreventer.h */,
+				FA1ABD3D1B0886B400F1D31C /* MMPDeepSleepPreventer.m */,
+				FA1ABD3E1B0886B400F1D31C /* MMPSilence.wav */,
+			);
+			name = MMPDeepSleepPreventer;
+			path = "MMPDeepSleepPreventer-master";
+			sourceTree = "<group>";
+		};
+		FA59CC611D0DD7F700867547 /* Serial Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				FABD3CAD1E2AC77B001E902A /* SerialParser.swift */,
+				FABD3CAB1E2A99C4001E902A /* BluetoothSerialParser.swift */,
+			);
+			name = "Serial Parsing";
+			sourceTree = "<group>";
+		};
+		FA59CC621D0DD84900867547 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA45A06C1BF1253B007D6F08 /* TripInfoView.xib */,
+				FABD3C7E1E2A7459001E902A /* TripInfoView.swift */,
+				FABEAB171D290DDF006BCDB8 /* BlurredView.swift */,
+				FA59CC311D0D6DBB00867547 /* PopupView.xib */,
+				FABEAB191D290F09006BCDB8 /* PopupView.swift */,
+				FABD3C811E2A77DE001E902A /* GraphView.swift */,
+				FABEAB0F1D290C3B006BCDB8 /* SettingProgressView.swift */,
+				FABEAB101D290C3B006BCDB8 /* SettingLabel.swift */,
+				FABEAB131D290D73006BCDB8 /* AudioSettingsView.xib */,
+				FABEAB151D290D81006BCDB8 /* AudioSettingsView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FA59CC631D0DD85100867547 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA59CC591D0DC0EB00867547 /* CarInfo.swift */,
+				FA59CC5B1D0DC9DA00867547 /* CarInfo+SerialParserDelegate.swift */,
+				FA59CC6E1D0E159C00867547 /* CarDoors.swift */,
+				FAF2640B1D15AE6B002C2DD3 /* AudioSettings.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA59CC641D0DD85F00867547 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA59CC5D1D0DD20500867547 /* DebugViewController.swift */,
+				FA59CC5F1D0DD47300867547 /* CarObservingViewController.swift */,
+				FA59CC661D0DD96300867547 /* DashboardViewController.swift */,
+				FA59CC681D0DE39900867547 /* RadioViewController.swift */,
+				FA59CC6A1D0DE71C00867547 /* TripInfoViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FA59CC651D0DD87500867547 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FABF1B561AFE7C64008D7708 /* Main.storyboard */,
+				FABF1B5B1AFE7C64008D7708 /* LaunchScreen.xib */,
+				FABF1B591AFE7C64008D7708 /* Images.xcassets */,
+				FA4FCBD91AFEC51B0036A037 /* MC360.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FABD3C801E2A76EB001E902A /* BLE Library */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A155A1B6E6CC200B67891 /* BLESerialManager.h */,
+				FA0A155B1B6E6CC200B67891 /* BLESerialManager.m */,
+				FA0A155C1B6E6CC200B67891 /* BLESerialDevice.h */,
+				FA0A155D1B6E6CC200B67891 /* BLESerialDevice.m */,
+			);
+			name = "BLE Library";
+			sourceTree = "<group>";
+		};
+		FABD3C9C1E2A9514001E902A /* CarDashTests */ = {
+			isa = PBXGroup;
+			children = (
+				FABD3CA91E2A9595001E902A /* SerialParserTests.swift */,
+				FABD3CAF1E2AD2CF001E902A /* cansample.hex */,
+				FABD3C9F1E2A9514001E902A /* Info.plist */,
+				FABD3CA51E2A953A001E902A /* CarDashTests-Bridging-Header.h */,
+			);
+			path = CarDashTests;
+			sourceTree = "<group>";
+		};
+		FABF1B401AFE7C64008D7708 = {
+			isa = PBXGroup;
+			children = (
+				FABF1B4B1AFE7C64008D7708 /* CarDash */,
+				FABD3C9C1E2A9514001E902A /* CarDashTests */,
+				FABF1B4A1AFE7C64008D7708 /* Products */,
+				73D4271A8D16F4E822FA06A2 /* Pods */,
+				D289F3F72C44EBF4B032E5FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FABF1B4A1AFE7C64008D7708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FABF1B491AFE7C64008D7708 /* CarDash.app */,
+				FABD3C9B1E2A9514001E902A /* CarDashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FABF1B4B1AFE7C64008D7708 /* CarDash */ = {
+			isa = PBXGroup;
+			children = (
+				FA59CC6C1D0DEB4E00867547 /* AppDelegate.swift */,
+				FA59CC631D0DD85100867547 /* Model */,
+				FA59CC621D0DD84900867547 /* Views */,
+				FA59CC641D0DD85F00867547 /* View Controllers */,
+				FA59CC611D0DD7F700867547 /* Serial Parsing */,
+				FA59CC651D0DD87500867547 /* Resources */,
+				FABF1B4C1AFE7C64008D7708 /* Supporting Files */,
+			);
+			path = CarDash;
+			sourceTree = "<group>";
+		};
+		FABF1B4C1AFE7C64008D7708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FABD3C801E2A76EB001E902A /* BLE Library */,
+				FA1ABD321B0885D600F1D31C /* MMPDeepSleepPreventer */,
+				FA59CC381D0DC03E00867547 /* CarDash-Bridging-Header.h */,
+				FABF1B4D1AFE7C64008D7708 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FABD3C9A1E2A9514001E902A /* CarDashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABD3CA41E2A9514001E902A /* Build configuration list for PBXNativeTarget "CarDashTests" */;
+			buildPhases = (
+				FABD3C971E2A9514001E902A /* Sources */,
+				FABD3C981E2A9514001E902A /* Frameworks */,
+				FABD3C991E2A9514001E902A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FABD3CA11E2A9514001E902A /* PBXTargetDependency */,
+			);
+			name = CarDashTests;
+			productName = CarDashTests;
+			productReference = FABD3C9B1E2A9514001E902A /* CarDashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FABF1B481AFE7C64008D7708 /* CarDash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABF1B6C1AFE7C64008D7708 /* Build configuration list for PBXNativeTarget "CarDash" */;
+			buildPhases = (
+				8064F06DD40641B530A9D5C7 /* [CP] Check Pods Manifest.lock */,
+				FA59CC371D0DC02100867547 /* ShellScript */,
+				FABF1B451AFE7C64008D7708 /* Sources */,
+				FABF1B461AFE7C64008D7708 /* Frameworks */,
+				FABF1B471AFE7C64008D7708 /* Resources */,
+				003F8A1621AD8D3CA7E3C86A /* [CP] Embed Pods Frameworks */,
+				2D305ECD68E68FDB8290392E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarDash;
+			productName = CarDash;
+			productReference = FABF1B491AFE7C64008D7708 /* CarDash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FABF1B411AFE7C64008D7708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Alexandre Blin";
+				TargetAttributes = {
+					FABD3C9A1E2A9514001E902A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4WPVA6CT2N;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FABF1B481AFE7C64008D7708;
+					};
+					FABF1B481AFE7C64008D7708 = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FABF1B441AFE7C64008D7708 /* Build configuration list for PBXProject "CarDash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FABF1B401AFE7C64008D7708;
+			productRefGroup = FABF1B4A1AFE7C64008D7708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FABF1B481AFE7C64008D7708 /* CarDash */,
+				FABD3C9A1E2A9514001E902A /* CarDashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FABD3C991E2A9514001E902A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABD3CB01E2AD4B7001E902A /* cansample.hex in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABF1B471AFE7C64008D7708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABF1B581AFE7C64008D7708 /* Main.storyboard in Resources */,
+				FABF1B5D1AFE7C64008D7708 /* LaunchScreen.xib in Resources */,
+				FA627A311AFEC7E800D38218 /* MC360.ttf in Resources */,
+				FABF1B5A1AFE7C64008D7708 /* Images.xcassets in Resources */,
+				FABEAB141D290D73006BCDB8 /* AudioSettingsView.xib in Resources */,
+				FA59CC321D0D6DBB00867547 /* PopupView.xib in Resources */,
+				FA45A06D1BF1253B007D6F08 /* TripInfoView.xib in Resources */,
+				FA1ABD401B0886B400F1D31C /* MMPSilence.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003F8A1621AD8D3CA7E3C86A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarDash/Pods-CarDash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D305ECD68E68FDB8290392E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarDash/Pods-CarDash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8064F06DD40641B530A9D5C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA59CC371D0DC02100867547 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FABD3C971E2A9514001E902A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABD3CAA1E2A9595001E902A /* SerialParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABF1B451AFE7C64008D7708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1ABD3F1B0886B400F1D31C /* MMPDeepSleepPreventer.m in Sources */,
+				FA0A155E1B6E6CC200B67891 /* BLESerialManager.m in Sources */,
+				FABD3C821E2A77DE001E902A /* GraphView.swift in Sources */,
+				FAF2640C1D15AE6B002C2DD3 /* AudioSettings.swift in Sources */,
+				FABEAB111D290C3B006BCDB8 /* SettingProgressView.swift in Sources */,
+				FA59CC601D0DD47300867547 /* CarObservingViewController.swift in Sources */,
+				FABEAB121D290C3B006BCDB8 /* SettingLabel.swift in Sources */,
+				FA59CC6B1D0DE71C00867547 /* TripInfoViewController.swift in Sources */,
+				FA59CC5E1D0DD20500867547 /* DebugViewController.swift in Sources */,
+				FA59CC6F1D0E159C00867547 /* CarDoors.swift in Sources */,
+				FA59CC5A1D0DC0EB00867547 /* CarInfo.swift in Sources */,
+				FABEAB1A1D290F09006BCDB8 /* PopupView.swift in Sources */,
+				FA59CC691D0DE39900867547 /* RadioViewController.swift in Sources */,
+				FABD3CAC1E2A99C4001E902A /* BluetoothSerialParser.swift in Sources */,
+				FA59CC5C1D0DC9DA00867547 /* CarInfo+SerialParserDelegate.swift in Sources */,
+				FABD3CAE1E2AC77B001E902A /* SerialParser.swift in Sources */,
+				FA0A155F1B6E6CC200B67891 /* BLESerialDevice.m in Sources */,
+				FABEAB161D290D81006BCDB8 /* AudioSettingsView.swift in Sources */,
+				FA59CC6D1D0DEB4E00867547 /* AppDelegate.swift in Sources */,
+				FA59CC671D0DD96300867547 /* DashboardViewController.swift in Sources */,
+				FABEAB181D290DDF006BCDB8 /* BlurredView.swift in Sources */,
+				FABD3C7F1E2A7459001E902A /* TripInfoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FABD3CA11E2A9514001E902A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FABF1B481AFE7C64008D7708 /* CarDash */;
+			targetProxy = FABD3CA01E2A9514001E902A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FABF1B561AFE7C64008D7708 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FABF1B571AFE7C64008D7708 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FABF1B5B1AFE7C64008D7708 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FABF1B5C1AFE7C64008D7708 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FABD3CA21E2A9514001E902A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4WPVA6CT2N;
+				INFOPLIST_FILE = CarDashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.alexandreblin.CarDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "CarDashTests/CarDashTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarDash.app/CarDash";
+			};
+			name = Debug;
+		};
+		FABD3CA31E2A9514001E902A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 4WPVA6CT2N;
+				INFOPLIST_FILE = CarDashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.alexandreblin.CarDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarDashTests/CarDashTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarDash.app/CarDash";
+			};
+			name = Release;
+		};
+		FABF1B6A1AFE7C64008D7708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FABF1B6B1AFE7C64008D7708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FABF1B6D1AFE7C64008D7708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 695AD8DAA0E1E51FA88A4246 /* Pods-CarDash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CarDash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.alexandreblin.CarDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarDash/CarDash-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FABF1B6E1AFE7C64008D7708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5AF33B5BE997B6B85484561 /* Pods-CarDash.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CarDash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.alexandreblin.CarDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarDash/CarDash-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FABD3CA41E2A9514001E902A /* Build configuration list for PBXNativeTarget "CarDashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABD3CA21E2A9514001E902A /* Debug */,
+				FABD3CA31E2A9514001E902A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FABF1B441AFE7C64008D7708 /* Build configuration list for PBXProject "CarDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABF1B6A1AFE7C64008D7708 /* Debug */,
+				FABF1B6B1AFE7C64008D7708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FABF1B6C1AFE7C64008D7708 /* Build configuration list for PBXNativeTarget "CarDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABF1B6D1AFE7C64008D7708 /* Debug */,
+				FABF1B6E1AFE7C64008D7708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FABF1B411AFE7C64008D7708 /* Project object */;
+}
